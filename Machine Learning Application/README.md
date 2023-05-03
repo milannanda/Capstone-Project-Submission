@@ -20,5 +20,5 @@ To compile, run: ```buildozer -v android debug```
 
 To change architecture or dependencies, change the appropriate settings in the ```buildozer.spec``` file.
 
-I have included a .buildozer zip file. This includes some dependencies converted from x86_64 to AArch64 when extracted.
+~~I have included a .buildozer zip file. This includes some dependencies converted from x86_64 to AArch64 when extracted.~~ The zip was too large to upload to GitHub
 
