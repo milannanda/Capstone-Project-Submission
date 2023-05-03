@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Page2">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="131dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon" />
+
+    <Button
+        android:id="@+id/button_record"
+        android:layout_width="351dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="150dp"
+        android:backgroundTint="#BCB3B3"
+        android:clickable="true"
+        android:drawableStart="@drawable/recordpause"
+        android:text="Record"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/button_upload"
+        android:layout_width="351dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#BCB3B3"
+        android:clickable="true"
+        android:drawableStart="@android:drawable/ic_menu_upload"
+        android:text="Upload"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_record" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Record">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/icon"
+        android:paddingTop="50dp"
+        android:paddingBottom="10dp">
+
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tv_recording_path"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_time"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:maxWidth="300dp"
+        android:text="Recording File Name"
+        android:textAlignment="center"
+        android:textSize="20sp">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/ll_time"
+        android:layout_centerInParent="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textAlignment="center"
+                android:textSize="70dp"
+                android:textColor="@color/black"
+                android:id="@+id/tv_time">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Timer"
+                android:textAlignment="center"
+                android:textSize="20sp">
+
+            </TextView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ib_record"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/ll_time"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginBottom="152dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/record1">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/ib_play"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="177dp"
+        android:layout_toEndOf="@+id/ib_record"
+        android:background="@android:color/transparent"
+        android:src="@drawable/play">
+
+    </ImageView>
+
+    <Button
+        android:id="@+id/button_analyse_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="157dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="84dp"
+        android:backgroundTint="#BCB3B3"
+        android:text="Analyse" />
+
+    <Button
+        android:id="@+id/button_back_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="157dp"
+        android:layout_marginEnd="155dp"
+        android:layout_marginBottom="17dp"
+        android:backgroundTint="#BCB3B3"
+        android:text="Back" />
+
+
+</RelativeLayout>
